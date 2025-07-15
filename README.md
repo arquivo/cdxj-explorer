@@ -1,5 +1,5 @@
 # cdxj-explorer
-A python based application to explore CDXJ files. Meant to be used with Arquivo.pt's CDXJ files, but probably works with any CDXJ files. Though i haven't tested it.
+A python based application to explore CDXJ files. Meant to be used with Arquivo.pt's CDXJ files, but probably works with any CDXJ files. Though it hasn't been tested with other CDX files.
 
 ## Installation
 
