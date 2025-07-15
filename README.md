@@ -1,6 +1,11 @@
 # cdxj-explorer
 A python based application to explore CDXJ files. Meant to be used with Arquivo.pt's CDXJ files, but probably works with any CDXJ files. Though it hasn't been tested with other CDX files.
 
+## Important notes
+
+This isn't a well optimized project, it was just something I made for fun and it turned out to be somewhat useful. As such it may consume way too many resources, to make sure that doesn't happen avoid searching "All results" unless you're sure that the number of results is a manageable number. From my experience less than 10,000 is fine, above 10,000 it starts struggling.
+It'd be also wise to avoid "All results" searches altogether if you're getting the file from the internet rather than a local file. The program makes one HTTP request per line read, so you might get blocked or accidentally cause a DoS if the number of lines is too big. It will also be horribly slow.
+
 ## Installation
 
 `pip install PyQt5`
@@ -29,7 +34,4 @@ A python based application to explore CDXJ files. Meant to be used with Arquivo.
 
 That's it.
 
-## Notes
 
-This isn't a well optimized project, it was just something I made for fun and it turned out to be somewhat useful. As such it may consume way too many resources, to make sure that doesn't happen avoid searching "All results" unless you're sure that the number of results is a manageable number. From my experience less than 10,000 is fine, above 10,000 it starts struggling.
-It'd be also wise to avoid "All results" searches altogether if you're getting the file from the internet rather than a local file. The program makes one HTTP request per line read, so you might get blocked or accidentally cause a DoS if the number of lines is too big. It will also be horribly slow.
